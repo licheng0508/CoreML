@@ -14,15 +14,7 @@ class CoreMLViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
     
-//    var model: Inceptionv3!
-//    var model: MobileNet!
-//    var model: SqueezeNet!
-//    var model: GoogLeNetPlaces!
-//    var model: VGG16!
-
-    var model: Flowers!
-    
-    
+    var model: Inceptionv3!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +24,7 @@ class CoreMLViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        model = Flowers()
+        model = Inceptionv3()
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,23 +92,10 @@ extension CoreMLViewController: UIImagePickerControllerDelegate {
         CVPixelBufferUnlockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
         imageView.image = newImage
         
-//        guard let prediction = try? model.prediction(sceneImage: pixelBuffer!) else {
-//            return
-//        }
-//
-//        textLabel.text = "I think this is a \(prediction.sceneLabel)."
-        
-
-        guard let prediction = try? model.prediction(data: pixelBuffer!) else {
+        guard let prediction = try? model.prediction(image: pixelBuffer!) else {
             return
         }
         textLabel.text = "I think this is a \(prediction.classLabel)."
-        
-//        guard let prediction = try? model.prediction(image: pixelBuffer!) else {
-//            return
-//        }
-//
-//        textLabel.text = "I think this is a \(prediction.classLabel)."
         
     }
 }

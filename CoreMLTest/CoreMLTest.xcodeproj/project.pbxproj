@@ -13,7 +13,6 @@
 		E3D4AFF420B2C47F00382A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D4AFF220B2C47F00382A6E /* LaunchScreen.storyboard */; };
 		E3D4AFFC20B2CC4F00382A6E /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D4AFFB20B2CC4F00382A6E /* CoreMLViewController.swift */; };
 		E3D4AFFE20B2D0BE00382A6E /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E3D4AFFD20B2D0BE00382A6E /* Inceptionv3.mlmodel */; };
-		E3D4B00820B3C93800382A6E /* Flowers.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E3D4B00720B3C93800382A6E /* Flowers.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		E3D4AFF520B2C47F00382A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D4AFFB20B2CC4F00382A6E /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		E3D4AFFD20B2D0BE00382A6E /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		E3D4B00720B3C93800382A6E /* Flowers.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Flowers.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 			children = (
 				E3D4AFE920B2C47C00382A6E /* AppDelegate.swift */,
 				E3D4AFFB20B2CC4F00382A6E /* CoreMLViewController.swift */,
-				E3D4B00720B3C93800382A6E /* Flowers.mlmodel */,
 				E3D4AFFD20B2D0BE00382A6E /* Inceptionv3.mlmodel */,
 				E3D4AFED20B2C47C00382A6E /* Main.storyboard */,
 				E3D4AFF020B2C47F00382A6E /* Assets.xcassets */,
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D4B00820B3C93800382A6E /* Flowers.mlmodel in Sources */,
 				E3D4AFFC20B2CC4F00382A6E /* CoreMLViewController.swift in Sources */,
 				E3D4AFFE20B2D0BE00382A6E /* Inceptionv3.mlmodel in Sources */,
 				E3D4AFEA20B2C47C00382A6E /* AppDelegate.swift in Sources */,
